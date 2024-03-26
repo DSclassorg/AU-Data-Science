@@ -6,7 +6,7 @@ library(tidyverse)
 
 data <- diamonds%>%
   select("price", "x", "y", "z")%>%
-  filter(price > 17000)
+  filter(price >= 17000)
 
 data
 
